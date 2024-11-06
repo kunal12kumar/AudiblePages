@@ -1,7 +1,6 @@
-import exp from "constants";
+
 import mongoose from "mongoose";
 const {Schema}=mongoose;
-import { type } from "os";
 
 const  userdata=new mongoose.Schema({
     email:{type:String},
