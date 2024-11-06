@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+
 import reportWebVitals from './reportWebVitals';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter,RouterProvider } from 'react-router-dom';
+import Header from './pages/Header';
 import Home from './pages/Home';
 import Login from './pages/Login';
-import SignUp from './pages/SignUp';
-import Uploadsection from './pages/Uploadsection';
 import Fileupload from './pages/Fileupload';
+import SignUp from './pages/SignUp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let allrouter=createBrowserRouter([
@@ -16,22 +17,22 @@ let allrouter=createBrowserRouter([
     element:<Home></Home>
   },
   {
-    path:'/login',
+    path:'/Login',
     element:<Login></Login>
-  },
-  {
-    path:'/SignUp',
-    element:<SignUp></SignUp>
   },
   {
     path:'/UploadSection',
     element:<Fileupload></Fileupload>
+  },
+  {
+    path:'/SignUp',
+    element:<SignUp></SignUp>
   }
-]
-)
+])
 root.render(
   <React.StrictMode>
     <RouterProvider router={allrouter}></RouterProvider>
+  
   </React.StrictMode>
 );
 

@@ -1,0 +1,31 @@
+{
+  "name": "audiblepages_backend",
+  "version": "1.0.0",
+  "description": "A file which convert pdf file to audio file",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunal12kumar/AudiblePages,git.git"
+  },
+  "author": "kunal kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kunal12kumar/AudiblePages,git/issues"
+  },
+  "homepage": "https://github.com/kunal12kumar/AudiblePages,git#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.0",
+    "nodemailer": "^6.9.16",
+    "nodemon": "^3.1.7",
+    "stream-http": "^3.2.0"
+  }
+}

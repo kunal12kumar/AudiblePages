@@ -1,4 +1,9 @@
 axios,
 react-toastify,
 react-router-dom,
-
+express,
+nodemon,
+cors,
+mongoose,
+nodemailer,
+crypto,
