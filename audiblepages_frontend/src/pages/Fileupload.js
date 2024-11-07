@@ -40,7 +40,7 @@ export default function Fileupload() {
             event.preventDefault();
             const formdata = new FormData();
             formdata.append("Title", Filetitle);
-            formdata.append("File", File);
+            formdata.append("file", File);
             setsaveformdata(formdata)
 
             console.log(formdata);
@@ -48,14 +48,13 @@ export default function Fileupload() {
             console.log(Style);
             console.log(Filetitle);
 
-            const result = await axios.post("http://localhost:8091/api/rpdf/save", formdata, {
-                headers: { "Content-Type": "multipart/form-data" },
-            });
+            const result = await axios.post("http://localhost:8091/api/rpdf/save", formdata);
             console.log(result);
             if (result.status === 200) {
                 toast.success("Uploaded Successfully")
             }
-        } catch {
+        } catch(err) {
+            console.log(err)
             toast.error("Uploading Failed");
 
         }
